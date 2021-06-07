@@ -1,14 +1,12 @@
-use serde::Deserialize;
+//use serde::Deserialize;
 use yew::{
     format::{Json, Nothing},
     prelude::*,
     services::fetch::{FetchService, FetchTask, Request, Response},
 };
 
-#[derive(Debug, Deserialize)]
-pub struct DataResponse {
-    status: String,
-}
+extern crate data;
+use data::DataResponse;
 
 #[derive(Debug)]
 pub enum Msg {

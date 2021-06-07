@@ -535,6 +535,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "data"
+version = "0.1.0"
+dependencies = [
+ "serde",
+]
+
+[[package]]
 name = "derive_more"
 version = "0.99.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1425,6 +1432,7 @@ version = "0.1.0"
 dependencies = [
  "actix-files",
  "actix-web",
+ "data",
  "serde",
 ]
 
@@ -1745,6 +1753,7 @@ name = "ui"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "data",
  "serde",
  "wasm-bindgen",
  "yew",

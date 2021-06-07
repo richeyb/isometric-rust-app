@@ -1,9 +1,12 @@
 module.exports = {
   purge: {
-    enabled: true,
-    content: ['./static/index.html']
+    enabled: true, 
+    content: [
+      "./src/**/*.rs",
+      "./static/*.html"
+    ],
   },
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },

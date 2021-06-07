@@ -22,7 +22,7 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.(scss)$/i,
+          test: /\.(css|sass|scss)$/i,
           include: [
             path.resolve(__dirname, "stylesheets"),
           ],

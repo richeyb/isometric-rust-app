@@ -1,13 +1,13 @@
 [package]
-name = "server"
+name = "data"
 version = "0.1.0"
-authors = ["brandonrichey"]
+authors = ["Brandon Richey <brandon.richey@refersion.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["rlib", "cdylib"]
+
 [dependencies]
-actix-web = "3"
-actix-files = "0.5.0"
 serde = "1.0"
-data = { path = "../data" }

@@ -7,7 +7,7 @@ const HOST : &str = "127.0.0.1";
 const PORT : &str = "8080";
 
 mod api;
-use api::data;
+use api::get_data;
 
 fn root() -> PathBuf {
     PathBuf::from(ROOT_PATH)
@@ -34,7 +34,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new()
         .service(
             web::scope("/api")
-                .service(data)
+                .service(get_data)
         )
         .service(index)
         .route("/{filename:.*}", web::get().to(serve_file)))
